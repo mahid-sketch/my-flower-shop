@@ -1,0 +1,448 @@
+/* font styles */
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.text-color-primary{
+    color: #E95A08;
+}
+.text-color-secondary{
+    color: rgba(0, 0, 0, 0.5);
+}
+.cmn-titel{
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.gray{
+    color: rgba(0, 0, 0, 0.5);
+}
+/* nav styles start */
+.head-sec{
+    margin-top: 30px;
+}
+.navbar{
+    /* height: 70px; */
+    
+    /* padding: 20px 0; */
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar img{
+    height: 70px;
+    width: 70px;
+}
+.nav-link li{
+    list-style: none;
+    margin-left: 45px;
+}
+.nav-link li a{
+    text-decoration: none;
+    color: #252432;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-link li a:hover{
+    color: #E95A08;
+}
+.nav-link li span{
+    text-decoration: none;
+    color: #252432;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-link li span:hover{
+    color: #E95A08;
+}
+.navbar, .banner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.icon{
+    padding: 0 7px;
+}
+.banner{
+    margin: 120px auto;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+.ban-right{
+    width: 100%;
+}
+.ban-right img{
+    width: 100%;
+}
+.ban-titel{
+    font-family: "Noto Serif", serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.ban-des{
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+/* our plants styles start */
+.our-plants{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.plant-titel{
+    text-align: center;
+}
+.plant-des{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 770px;
+    margin: 0 auto;
+}
+.card-main{
+    margin-top: 50px;
+}
+.card-items img{
+    width: 100%;
+}
+.card-des{
+    text-align: center;
+}
+.flower-name{
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-top: 15px;
+    
+}
+.flower-price{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+}
+.btn-design{
+    border: none;
+    margin-top: 15px;
+    background-color: #E95A08;
+    padding: 15px 0px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    color: white;
+}
+
+.card-main{
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr);
+    gap: 20px;
+}
+
+.plant-lover{
+    max-width: 1140px;
+    margin: 100px auto;
+    display: flex;
+    gap: 80px ;
+}
+.latest-full{
+    display: flex;
+}
+.latest-full img{
+    width: 100%;
+}
+.latest-sec{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.lover{
+    padding: 40px 0;
+}
+.lover-titel{
+    font-family: "Noto Serif", serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    
+}
+.lover-text{
+    margin: 20px 18px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* latest part start */
+.latest-full{
+    margin: 120px auto;
+    gap: 28px;
+}
+.left{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 25px;
+}
+.left-fist{
+    background-image: url(../images/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left-send{
+    background-image: url(../images/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 30%;
+    height: 400px;
+}
+.right{
+    background-image: url(../images/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 70%;
+    border-radius: 15px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.latest-full a{
+    text-decoration: none;
+    color: white;
+}
+/* .discount{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Noto Serif", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.dis-a{
+    text-align: center;
+    
+    margin:0 auto;
+    margin-top: 65px;
+    font-family: "Noto Serif", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+} */
+
+/* join section start */
+.join-full-bg{
+    background-image: url(../images/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.join-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+.join-titel{
+    width: 70%;
+    text-align: center;
+    
+}
+.join-titel h3{
+    font-family: "Noto Serif", serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+.join-btn{
+    display: flex;
+    
+}
+input{
+    width: 100%;
+    height: 50px;
+}
+.btn{
+    background-color: #E95A08;
+    border: none;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 0 30px;
+}
+.container{
+    width: 100%;
+}
+.foot{
+    width: 340px;
+}
+.foot-sec{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+.foot-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.foot-two{
+    display: flex;
+}
+.foot-two li{
+    padding: 10px 0;
+    list-style: none;
+}
+.foot-two li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+.foot-three li{
+    padding: 10px 0;
+    list-style: none;
+}
+.foot-three li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+.hide{
+    display: none;
+}
+/* media quiry css */
+@media screen and (max-width: 576px){
+    body{
+        width: 100%;
+    }
+    .nav-hide{
+        display: none;
+    }
+    .navbar{
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+   .banner {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+   }
+   .ban-des{
+    font-size: 16px;
+   }
+   .ban-left{
+    padding: 40px;
+   }
+   .ban-titel{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-right: 70px;
+   }
+   .card-main{
+    grid-template-columns: repeat( 2 , 1fr);
+    padding: 0 20px;
+   }
+   .plant-des{
+    max-width: 350px;
+    padding: 0 15px;
+    font-size: 16px;
+
+   }
+   .plant-lover{
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 35px;
+    gap: 0px;
+   }
+   .lover-titel{
+    font-family: "Noto Serif", serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 10px;
+   }
+   .lover{
+    padding: 0  0;
+}
+.lover-text-ul{
+    padding: 0 15px;
+    margin-left: 10px;
+}
+.lover-text{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+.cmn-titel{
+    font-size: 1.8rem;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.latest-full{
+    flex-direction: column;
+
+}
+.left{
+    grid-template-columns: repeat(1,1fr);
+    width: 90%;
+    margin: 0 20px;   
+}
+.right{
+    width: 90%;
+    margin: 0 20px; 
+    height: 200px;  
+}
+.join-titel h3{
+    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+}
