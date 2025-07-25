@@ -196,6 +196,16 @@
     font-family: "Inter", sans-serif;
     color: rgba(0, 0, 0, 0.5);
 }
+.plant-lover{
+    position: relative;
+}
+.upper{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 33%;
+    top: -95px;
+}
 /* latest part start */
 .latest-full{
     margin: 120px auto;
